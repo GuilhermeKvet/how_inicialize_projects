@@ -80,8 +80,9 @@ Devemos agora adicionar no `package.json` um novo script:
 ##
 ### **Passos para testes 🛠**
 
-
 #### Jest
+[Documentação](https://jestjs.io/docs/getting-started)
+
 Para instalar o jest, juntamente com os tipos e com transformador de arquivos test .ts:
 
 `npm i jest @types/jest ts-jest -D`
@@ -128,6 +129,7 @@ npm test
 ```
 ##
 #### Lint-staged
+[Documentação](https://www.npmjs.com/package/lint-staged)
 
 Para realizar determinados comando apenas nos arquivos que estão em staged:
 
@@ -154,8 +156,7 @@ Na sequência, cria-se um arquivo chamado `.lintstagedrc.json` com o seguinte c�
 
 ###
 #### Linter
-
-
+[Documentação](https://www.npmjs.com/package/eslint-config-standard-with-typescript)
 
 `npm i eslint-config-standard-with-typescript`
 
@@ -176,12 +177,16 @@ Após instalar, precisamos criar o arquivo de configuração `.eslintrc.json` co
 
 ###
 #### Commit-msg-linter
+[Documentação](https://www.npmjs.com/package/git-commit-msg-linter)
+
 Para bloquear commits não semanticos
 
 `npm i git-commit-msg-linter`
 
 ###
 #### Husky
+[Documentação](https://www.npmjs.com/package/husky)
+
 Para verificação do projeto antes de dar um commit, como linter e testes.
 
 Instalar o husky
