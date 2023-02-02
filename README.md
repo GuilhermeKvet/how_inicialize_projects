@@ -38,7 +38,7 @@ Para o node executar arquivos TypeScript precisamos do ts-node-dev
 ###
 Instalamos o Express juntamente com a Tipagem
 
-`npm i express @types/express`
+`npm i express @types/express -D`
 
 ###
 Criaremos então a pasta `src` com o arquivo `app.ts` contendo o seguinte codigo: 
@@ -158,7 +158,7 @@ Na sequência, cria-se um arquivo chamado `.lintstagedrc.json` com o seguinte c�
 #### Linter
 [Documentação](https://www.npmjs.com/package/eslint-config-standard-with-typescript)
 
-`npm i eslint-config-standard-with-typescript`
+`npm i eslint-config-standard-with-typescript -D`
 
 ###
 Após instalar, precisamos criar o arquivo de configuração `.eslintrc.json` com o seguinte código:
@@ -181,7 +181,7 @@ Após instalar, precisamos criar o arquivo de configuração `.eslintrc.json` co
 
 Para bloquear commits não semanticos
 
-`npm i git-commit-msg-linter`
+`npm i git-commit-msg-linter -D`
 
 ###
 #### Husky
