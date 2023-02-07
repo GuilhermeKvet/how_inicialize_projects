@@ -82,7 +82,7 @@ Após criar a comunicação com o banco de dados, no arquivo `main.py`, adicione
 
 ```
 ...
-from raiz.db import create_db_and_table, engine
+from raiz.db import create_db_and_tables, engine
 from sqlmodel import Session
 
 ...
@@ -99,7 +99,7 @@ def on_startup():
 
 Para rodar a api, utilizaremos a dependência uvicorn, que gera um servidor local, com o seguinte comando:
 
-⚠️ Não esqueça de trocar o `raiz` pelo nome da sua pasta
+⚠️ Não esqueça de trocar o `raiz` pelo nome da sua pasta que contem o `main.py`
 
 `uvicorn raiz.main:app --reload`
 
