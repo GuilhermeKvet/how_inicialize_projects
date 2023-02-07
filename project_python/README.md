@@ -30,7 +30,7 @@ uvicorn               #servidor
 
 Após feito isso, executar:
 
-`pip install dev-requirements.txt`
+`pip install -r dev-requirements.txt`
 
 No arquivo `main.py` configurar o `FastAPI`:
 
