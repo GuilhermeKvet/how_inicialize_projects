@@ -37,7 +37,9 @@ No arquivo `main.py` configurar o `FastAPI`:
 ```
 from fastapi import FastAPI
 
+
 app = FastAPI()
+
 
 @app.get('/')
 async def home():
@@ -49,10 +51,11 @@ No arquivo `model.py` configurar o `SQLModel`
 ```
 //exemplo
 from typing import Optional
-from sqlmodel import SQLModel
+from sqlmodel import SQLModel, Field
+
 
 class SuaClasse(SQLModel, table=True):
-    id: Option[int] = Field(default=None, primary_key=True)
+    id: Optional[int] = Field(default=None, primary_key=True)
     atributo: tipo = Field(max_length=100)
 ```
 
@@ -67,6 +70,7 @@ db_url = f"...url do banco"
 connect_args = {"check_same_thread": False}
 
 engine = create_engine(db_url, echo=True, connect_args=connect_args)
+
 
 def create_db_and_tables():
     from . import model  # noqa: F401
@@ -86,11 +90,18 @@ from sqlmodel import Session
 def get_session():    #Cria uma conexão falsa, para poder testar em um banco de dados diferente do que tem na produção
     return Session(engine)
 
+
 @app.on_event("startup")
 def on_startup():
     create_db_and_table()
 ...
 ```
+
+Para rodar a api, utilizaremos a dependência uvicorn, que gera um servidor local, com o seguinte comando:
+
+⚠️ Não esqueça de trocar o `raiz` pelo nome da sua pasta
+
+`uvicorn raiz.main:app --reload`
 
 ### **Testes 🛠**
 
