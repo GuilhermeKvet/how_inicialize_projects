@@ -14,6 +14,6 @@
 
 [**Implementando no projeto Nodejs <img align="center" alt="Gui-Nodejs" height="20" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />**](docker_nodejs/README.md)
 
-[**Implementando no projeto Fullstack 🐳**](docker_fullstack/README.md)
+[**Implementando no projeto Fullstack <img align="center" alt="Gui-React" height="20" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"><img align="center" alt="Gui-Nodejs" height="20" width="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />**](docker_fullstack/README.md)
 
 [**Implementando em Banco de Dados 🎲**](docker_db/README.md)
